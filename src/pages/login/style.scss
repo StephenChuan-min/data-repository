@@ -1,0 +1,148 @@
+.yc-login {
+  width: 100%;
+  background: #fff;
+  background-image: url(../../assets/img/bg.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  .yc-login-header {
+    height: 100px;
+    margin: 0 auto;
+    width: 1200px;
+    padding: 60px 0 25px 0;
+    img {
+      height: 50px;
+      vertical-align: top;
+    }
+  }
+
+  .yc-login-container {
+    height: 650px;
+    padding-top: 35px;
+    .yc-container-body {
+      height: 600px;
+      margin: 0 auto;
+      width: 1200px;
+      overflow: hidden;
+      position: relative;
+
+      .yc-left {
+        float: left;
+        margin: 0;
+      }
+
+      .yc-right-login {
+        width: 400px;
+        background-color: #ffffff;
+        position: relative;
+        float: right;
+        margin-top: 100px;
+        box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+        .yc-form-title {
+          margin-top: 37px;
+          text-align: center;
+          font-size: 16px;
+          color: #293038;
+          font-weight: bold;
+        }
+        .login-form {
+          padding: 27px 40px;
+          .yc-input {
+            width: 320px;
+            height: 40px;
+          }
+          button {
+            background-color: #016aa9;
+            height: 40px;
+          }
+          .yc-input-noborder{
+              input{
+                border:none;
+                background: #fff;
+                color:rgba(41,48,56,1);
+              }
+          }
+          .yc-forget {
+            font-size: 12px;
+            color: #293038;
+            display: inline-block;
+            &:hover {
+              text-decoration: underline;
+              color: #016aa9;
+            }
+          }
+          .yc-login-button {
+            width: 320px;
+            font-size: 16px;
+            margin-top: 22px;
+            &:hover{
+              background: #0278C2;
+            }
+          }
+          button:disabled {
+            background: #f5f5f5;
+            &:hover{
+              background: #f5f5f5;
+            }
+          }
+          .login-getCode_Button {
+            font-size: 14px;
+            width: 120px;
+            height: 32px;
+            border-radius: 2px;
+            color: #fff;
+            border: none;
+          }
+          .ant-input-affix-wrapper .ant-input-suffix {
+            right: 0;
+          }
+        }
+      }
+    }
+  }
+  .yc-right-login-noCode {
+    @extend .yc-right-login;
+    height: 360px;
+    .without-extra-node{
+        background: #C5C7CE !important;
+        color:#fff;
+    }
+  }
+  .yc-right-login-withCode {
+    @extend .yc-right-login;
+    height: 424px;
+  }
+  .yc-login-footer {
+    height: 100px;
+    margin-top: 60px;
+    margin-left: 300px;
+    color: #666666;
+    .footer-container {
+      .lineStyle {
+        line-height: 21px;
+        height: 14px;
+      }
+      .footer-tech {
+        @extend .lineStyle;
+        &-logo {
+          width: 12px;
+          height: 12px;
+          margin-right: 2px;
+        }
+      }
+      .footer-copyright {
+        @extend .lineStyle;
+        margin-top: 20px;
+      }
+    }
+  }
+  .ant-input-affix-wrapper .ant-input:not(:first-child) {
+    padding-left: 36px;
+}
+}
+
+.temp-module{
+  button{
+    margin: 10px 10px 0 0 ;
+  }
+}

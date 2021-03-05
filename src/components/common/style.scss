@@ -1,0 +1,57 @@
+.yc-components {
+    &-breadCrumb {
+        border-bottom: 1px solid #e2e4e9;
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        line-height: 1;
+        position: relative;
+        &-body {
+            font-size: 16px;
+            color: #293038;
+            font-weight: bold;
+        }
+        &_button {
+            text-align: center;
+            &-note {
+                margin-right: 5px;
+                font-size: 9px;
+                width: 60px;
+            }
+            button {
+                width: 90px;
+                height: 32px;
+                padding: 0;
+            }
+            .icon{
+                height: 12px;
+                width: 7px;
+                position: relative;
+                left: -1px;
+            }
+        }
+    }
+    &-hotDot {
+        font-size: 18px;
+        color: red;
+        position: absolute;
+    }
+    &-searchAndClearButtonGroup {
+        margin-left:5px;
+        &_clear {
+            font-size: 12px;
+            margin-left: 10px;
+        }
+        &_search{
+            font-size: 12px;
+            background: #0099CC;
+        }
+    }
+
+    &-assetTabTextWithNumber{
+        color:red;
+        margin-left:2px;
+    }
+}
